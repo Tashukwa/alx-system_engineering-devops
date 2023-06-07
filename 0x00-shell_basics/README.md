@@ -2,4 +2,4 @@ pwd - writes a script that prints the absolute path name of the current working 
 ls - Displays the contents list of your current directory.
 cd ~ - a script that changes the working directory to the user’s home directory.
 ls -l - Displays current directory contents in a long format.
-ls -a - Displays  current directory contents, including hidden files (starting with .). Use the long format.
+ls -al - Displays  current directory contents, including hidden files (starting with .). Use the long format.
