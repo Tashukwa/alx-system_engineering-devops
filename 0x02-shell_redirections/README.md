@@ -41,3 +41,4 @@ cut -d: -f1,6 /etc/passwd | sort -- displays all users and their home directorie
 find -empty | cut -d: -f1 -- finds all empty files and directories in the current directory and all sub-directories. 
 ind -type f -name *.gif -printf %fn | rev | cut -d'.' -f 2- | rev | LC_ALL=C sort -f -- lists all the files with a .gif extension in the current directory and all its sub-directories. 
 cut -c1 | paste -s | tr -d [:blank:] -- decodes acrostics that use the first letter of each line. 
+ sort | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=  -f6 -- parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
