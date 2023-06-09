@@ -39,3 +39,4 @@ tr -d cC -- removes all the letters c and C frrom input.
 rev -- reverses its input.
 cut -d: -f1,6 /etc/passwd | sort -- displays all users and their home directories, sorted by users.
 find -empty | cut -d: -f1 -- finds all empty files and directories in the current directory and all sub-directories. 
+ind -type f -name *.gif -printf %fn | rev | cut -d'.' -f 2- | rev | LC_ALL=C sort -f -- lists all the files with a .gif extension in the current directory and all its sub-directories. 
