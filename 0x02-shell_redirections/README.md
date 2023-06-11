@@ -50,4 +50,4 @@ ind -type f -name *.gif -printf %fn | rev | cut -d'.' -f 2- | rev | LC_ALL=C sor
 
 cut -c1 | paste -s | tr -d [:blank:] -- decodes acrostics that use the first letter of each line. 
 
-sort | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=  -f6 -- parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+tail -n +2 | cut -f -1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev | cut -d ' ' -f -1 | rev -- parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
