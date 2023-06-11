@@ -33,12 +33,21 @@ grep "bin" /etc/passwd | wc -l -- displays the number of lines that contain the 
 grep -A 3 root /etc/passwd -- displays lines containing the pattern “root” and 3 lines after them in the file /etc/passwd. 
 
 grep -v bin /etc/passwd -- displays all the lines in the file /etc/passwd that do not contain the pattern "bin".
+
 grep ^[[:alpha:]] /etc/ssh/sshd_config -- displays all lines of the file /etc/ssh/sshd_config starting with a letter.
+
 tr Ac Ze -- replaces all characters A and c from input to Z and e respectively. 
+
 tr -d cC -- removes all the letters c and C frrom input.
+
 rev -- reverses its input.
+
 cut -d: -f1,6 /etc/passwd | sort -- displays all users and their home directories, sorted by users.
+
 find -empty | cut -d: -f1 -- finds all empty files and directories in the current directory and all sub-directories. 
+
 ind -type f -name *.gif -printf %fn | rev | cut -d'.' -f 2- | rev | LC_ALL=C sort -f -- lists all the files with a .gif extension in the current directory and all its sub-directories. 
+
 cut -c1 | paste -s | tr -d [:blank:] -- decodes acrostics that use the first letter of each line. 
- sort | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=  -f6 -- parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
+
+sort | cut -f1 | uniq -c | sort -nr | head -n 11 | cut --d=  -f6 -- parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
