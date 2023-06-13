@@ -3,3 +3,4 @@ echo hello $USER -- prints hello user, where user is the current Linux user.expo
 echo /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin| tr : n | wc -l -- counts the number of directories in the PATH.
 printenv -- lists environment variables.
 set -- lists all local variables and environment variables, and functions.
+export BEST=School -- creates a new local variable.
