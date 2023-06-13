@@ -4,3 +4,4 @@ echo /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin| tr : n | wc -
 printenv -- lists environment variables.
 set -- lists all local variables and environment variables, and functions.
 export BEST=School -- creates a new local variable.
+export SCHOOL=Betty -- creates a new global variable.
