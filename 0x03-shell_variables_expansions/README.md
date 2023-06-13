@@ -12,4 +12,4 @@ printf "%.2f\n" $NUM -- prints a number with two decimal places, followed by a n
 printf "%x\n" $DECIMAL -- converts a number from base 10 to base 16.
 tr 'A-Za-z' 'N-ZA-Mn-za-m' -- encodes and decodes text using the rot13 encryption. Assume ASCII.
 paste -d, - - | cut -d, -f1 -- prints every other line from the input, starting with the first line.
-printf "%0\n" $(( $((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | tr stir. 01234))) )) | tr 01234567 bestcholl -- adds the two numbers stored in the environment variables WATER and STIR and prints the result.
+printf "%o\n" $(( $((5#$(echo $WATER | tr water 01234))) + $((5#$(echo $STIR | tr stir. 01234))) )) | tr 01234567 bestchol -- adds the two numbers stored in the environment variables WATER and STIR and prints the result.
