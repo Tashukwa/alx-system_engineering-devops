@@ -4,4 +4,4 @@ echo /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin| tr : n | wc -
 printenv -- lists environment variables.
 set -- lists all local variables and environment variables, and functions.
 export BEST=School -- creates a new local variable.
-export BEST=School -- creates a new global variable.
+export BEST=School -- creates a new global variable.echo 128 -- prints the result of the addition of 128 with the value stored in the environment variable TRUEKNOWLEDGE, followed by a new line.
